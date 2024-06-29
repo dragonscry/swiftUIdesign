@@ -15,7 +15,10 @@ struct ContentView: View {
             Text("Hello Irra")
                 .padding()
         }
-        .customBackground()
+        //.background(Color(.blue).opacity(0.2))
+        .patternBackground(height: 5, width: 5, spacing: 3, color: .yellow, opacity: 0.6) {
+            RoundedRectangle(cornerRadius: 5)
+        }
     }
 }
 
