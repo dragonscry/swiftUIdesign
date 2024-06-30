@@ -13,6 +13,7 @@
 		9A32FF1C2C2F084800B3AC1D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A32FF1B2C2F084800B3AC1D /* Preview Assets.xcassets */; };
 		9A3E4AF32C2F19BA00ABE051 /* FormsForPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3E4AF22C2F19BA00ABE051 /* FormsForPattern.swift */; };
 		9A3E4AF52C2F19E700ABE051 /* Pattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3E4AF42C2F19E700ABE051 /* Pattern.swift */; };
+		9AF695E22C31F04500BC39B0 /* RandomBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF695E12C31F04500BC39B0 /* RandomBackground.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		9A32FF1B2C2F084800B3AC1D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9A3E4AF22C2F19BA00ABE051 /* FormsForPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormsForPattern.swift; sourceTree = "<group>"; };
 		9A3E4AF42C2F19E700ABE051 /* Pattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pattern.swift; sourceTree = "<group>"; };
+		9AF695E12C31F04500BC39B0 /* RandomBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomBackground.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				9A32FF162C2F084700B3AC1D /* ContentView.swift */,
 				9A3E4AF42C2F19E700ABE051 /* Pattern.swift */,
 				9A3E4AF22C2F19BA00ABE051 /* FormsForPattern.swift */,
+				9AF695E12C31F04500BC39B0 /* RandomBackground.swift */,
 				9A32FF182C2F084800B3AC1D /* Assets.xcassets */,
 				9A32FF1A2C2F084800B3AC1D /* Preview Content */,
 			);
@@ -147,6 +150,7 @@
 				9A32FF172C2F084700B3AC1D /* ContentView.swift in Sources */,
 				9A3E4AF52C2F19E700ABE051 /* Pattern.swift in Sources */,
 				9A32FF152C2F084700B3AC1D /* ShapedBackgroundsApp.swift in Sources */,
+				9AF695E22C31F04500BC39B0 /* RandomBackground.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
