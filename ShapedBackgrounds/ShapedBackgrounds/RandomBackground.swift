@@ -15,13 +15,11 @@ import SwiftUI
 
 struct RandomBackground: View {
     var body: some View {
-        Rectangle()
-            .fill(.clear)
-            .frame(width: 300, height: 200)
-            .customBack(image_name: "dodle")
-            .cornerRadius(20)
-        
-        
+            Rectangle()
+                .fill(.clear)
+                .frame(width: 300, height: 200)
+                .customBack(image_name: "dodle", opacity: 0.1)
+                .cornerRadius(20)
     }
 }
 
@@ -30,24 +28,23 @@ struct RandomBackground: View {
 }
 
 extension View {
-    func customBack(image_name: String) -> some View {
-        
-        GeometryReader{geo in
-            self.background {
-                let mX = geo.size.width
-                let yx = geo.size.height
-                GeometryReader { gio in
-                    let gX = gio.size.width
-                    let gy = gio.size.height
-                    Image("dodle")
-                        .offset(x: CGFloat.random(in: -(gX-mX)/2...(gX-mX)/2), y: CGFloat.random(in: -(gy-yx)/2...(gy-yx)/2))
-                        .opacity(0.2)
-
+    func customBack(image_name: String, opacity: CGFloat) -> some View {
+        let img: UIImage = UIImage(named: image_name)!
+        let h: CGFloat = img.size.height
+        let w: CGFloat = img.size.width
+            
+        return self.background {
+                GeometryReader { geo in
+                    let x = geo.size.width
+                    let y = geo.size.height
+                    Image(image_name)
+                        .offset(x: CGFloat(Int.random(in: Int(-(w-x))...0)), y: CGFloat(Int.random(in: Int(-(h-y))...0)))
+                        .opacity(opacity)
+                    
+//                        .offset(CGSize(width: Int.random(in: -(w!-x)/2...(w!-x)/2), height: -(h!-y)/2...(h!-y)/2))
                 }
-                
             }
             .clipped()
-        }
-        
     }
 }
+
